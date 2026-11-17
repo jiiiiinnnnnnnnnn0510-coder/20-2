@@ -1,14 +1,4 @@
-// 이 따옴표 안에만 서울 열린데이터광장 인증키 입력
-const apiKey = "436154794c7373773737516c677742";
-
-// 강의자료 24쪽의 프록시 주소
-const proxy = "https://cors-anywhere-49h7.onrender.com/";
-
-const url =
-  proxy +
-  "http://openapi.seoul.go.kr:8088/" +
-  encodeURIComponent(apiKey) +
-  "/json/culturalEventInfo/1/1000";
+const url = "/.netlify/functions/event";
 
 let dataDiv = document.getElementById("dataDiv");
 let watchButton = document.getElementById("what");
